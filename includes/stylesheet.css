@@ -1,0 +1,209 @@
+/* stylesheet.css */
+body {
+	margin: 0;
+	background-color: #e2e2e2;
+	color: #000000;
+	overflow-y: auto;
+}
+
+#wrapper {
+	width: 100%;
+	height: 100%;
+	margin: auto;
+}
+
+#header {
+	background-color: #D3D3D3;
+	color: #000000;
+	text-align: center;
+	vertical-align: middle;
+	height: 5%;
+	width: 100%;
+	min-height: 6vh;
+}
+
+#menu {
+	background-color: #424141;
+	color: #FFFFFF;
+	height: 95%;
+	width: 10%;
+	min-height: 94vh;
+	max-height: 94vh;
+	float: left;
+	overflow-y: auto;
+}
+
+button.problemselection {
+	background-color: #424141;
+    color: #FFFFFF;
+   	font-size: 12px;
+    cursor: pointer;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+}
+
+
+#main {
+	height: 95%;
+	min-height: 94vh;
+	max-height: 94vh;
+	width: 100%;
+}
+
+#problemname {
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+
+}
+
+#problemstem {
+	text-align: center;
+}
+
+#circsimtable {
+	overflow-y: auto;
+}
+
+#thyroidtable {
+	overflow-y: auto;
+}
+
+#feedback {
+	max-height: 50vh;
+	overflow-y: auto;
+}
+
+table{
+	border-spacing: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+th {
+	padding: 5px;
+	font-size: 24px;
+	margin: 2px;
+}
+
+td {
+	padding: none;
+	text-align:center;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+td.parameter {
+	border: none;
+	padding: 5px;
+}
+
+button {
+	border-radius: 12px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+button.answer {
+	background-color: white;
+	background-image: linear-gradient(white,#a0a0a0);
+	width: 75px;
+}
+
+button.wronganswer {
+	background-color: red;
+	background-image: linear-gradient(#f51616,#b50000);
+	width: 75px;
+}
+
+button.problemselection[activeproblem='1'] {
+	color: yellow;
+}
+
+p.alignleft {
+	float: left;
+}
+
+p.alignright {
+	float: right;
+}
+
+div.hr {
+	background-color: black;
+	height: 2px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.label {
+	font-size: 24px;
+	font-weight:bold;
+}
+
+ /* Popup box BEGIN */
+div.hover_popup{
+    background:rgba(0,0,0,.4);
+    cursor:pointer;
+    display:none;
+    height:100%;
+    position:fixed;
+    text-align:center;
+    top:0;
+    width:100%;
+    z-index:10000;
+}
+.hover_popup .popup_helper{
+    display:inline-block;
+    height:100%;
+    vertical-align:middle;
+}
+
+.hover_popup > div {
+    background-color: #fff;
+    box-shadow: 10px 10px 60px #555;
+    display: inline-block;
+    height: auto;
+    min-height: 100px;
+    vertical-align: middle;
+    width: 80%;
+    position: relative;
+    border-radius: 8px;
+    padding: 15px 5%;
+}
+
+.popupCloseButton {
+    background-color: #fff;
+    border: 3px solid #999;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: arial;
+    font-weight: bold;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    font-size: 25px;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.popupCloseButton:hover {
+    background-color: #ccc;
+}
+
+.trigger_popup {
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+}
+
+/* Popup box END */
+ 
